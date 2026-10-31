@@ -92,8 +92,4 @@ npm audit
 
 İlkin implementasiya və bu son təmizləmə üçün təxminən 2 saat sərf edilib. Növbəti addımlarım olaraq Safari və Firefox-da əlavə brauzer testləri, əl ilə ekran oxuyucusu yoxlaması və CI üzərində vizual müqayisə əlavə edərdim.
 
-## Vercel deploy
-
-Build əmri `npm run build`, çıxış qovluğu `dist` olmalıdır. `vercel.json` təhlükəsizlik başlıqlarını təyin edir; əlavə SPA rewrite tələb olunmur. GitHub-a push və Vercel deploy müəllif tərəfindən aparılacaq.
-
 Layihə Firudin Maniyev tərəfindən hazırlanıb.
