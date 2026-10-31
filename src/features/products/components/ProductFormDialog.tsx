@@ -105,14 +105,14 @@ export function ProductFormDialog({
           </ProductFormField>
           <div className="grid gap-5 sm:grid-cols-2">
             <ProductFormField id="categoryId" label="Kateqoriya" error={errors.categoryId?.message}>
-              <div className="relative">
+              <div className="select-shell relative">
                 <select
                   id="categoryId"
                   aria-required="true"
                   aria-invalid={!!errors.categoryId}
                   aria-describedby={errors.categoryId ? 'categoryId-error' : undefined}
                   {...register('categoryId')}
-                  className="input appearance-none pr-10"
+                  className="input select-input appearance-none pr-10"
                 >
                   <option value="">Kateqoriya seçin</option>
                   {categories.map((category) => (
@@ -123,7 +123,7 @@ export function ProductFormDialog({
                 </select>
                 <ChevronDown
                   aria-hidden="true"
-                  className="pointer-events-none absolute top-4 right-4 size-4 text-muted"
+                  className="select-chevron pointer-events-none absolute top-1/2 right-4 size-4 -translate-y-1/2 text-muted"
                 />
               </div>
             </ProductFormField>

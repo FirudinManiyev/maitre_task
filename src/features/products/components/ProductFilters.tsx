@@ -46,7 +46,7 @@ export function ProductFilters({
           </button>
         )}
       </div>
-      <div className="relative w-full sm:w-[240px]">
+      <div className="select-shell relative w-full sm:w-[240px]">
         <select
           aria-label="Kateqoriyaya görə filtr"
           value={categoryId ?? ''}
@@ -54,7 +54,7 @@ export function ProductFilters({
           onChange={(event) =>
             onCategory(event.target.value ? Number(event.target.value) : undefined)
           }
-          className="input appearance-none pr-11"
+          className="input select-input appearance-none pr-11"
         >
           <option value="">
             {categoriesPending ? 'Kateqoriyalar yüklənir...' : 'Bütün kateqoriyalar'}
@@ -67,7 +67,7 @@ export function ProductFilters({
         </select>
         <ChevronDown
           aria-hidden="true"
-          className="pointer-events-none absolute top-1/2 right-4 size-4 -translate-y-1/2 text-muted"
+          className="select-chevron pointer-events-none absolute top-1/2 right-4 size-4 -translate-y-1/2 text-muted"
         />
       </div>
     </div>
